@@ -1,0 +1,11 @@
+git status 
+git reflog  # 参看历史（所有的commit，时间从下到上，
+git branch branchTest HEAD@{0}  # 返回到0时间点
+
+git checkout dev 切换到 dev 分支
+git branch [-d|D] branchTest    # 删除已终止的/正打开的
+
+
+git add .
+git commit -m "xx"
+git push origin master  # git push origin master:branchTest
