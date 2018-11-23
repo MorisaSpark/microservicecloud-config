@@ -1,36 +1,36 @@
-spring: 
-  proflies: 
-    active: 
+spring:
+  proflies:
+    active:
     - dev
 ---
-server: 
+server:
   prot: 7001
-spring:  
+spring:
   proflies: dev
-  application: 
+  application:
     name: microservicecloud-config-eureka-client
-    
-eureka: 
-  instance: 
+
+eureka:
+  instance:
     homename: eureka7001.com
-  client: 
+  client:
     register-with-eureka: false # 不将自己注册进服务
     fetch-registry: false   # 不通过eureka获取注册信息
-    service-url: 
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka
 ---
-server: 
+server:
   prot: 7001
-spring:  
+spring:
   proflies: test
-  application: 
+  application:
     name: microservicecloud-config-eureka-client
-    
-eureka: 
-  instance: 
+
+eureka:
+  instance:
     homename: eureka7001.com
-  client: 
+  client:
     register-with-eureka: false
     fetch-registry: false
-    service-url: 
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka
